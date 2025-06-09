@@ -1,0 +1,485 @@
+/* ===== RESPONSIVE STYLES ===== */
+
+/* For Mobile Devices - 320px-576px */
+@media screen and (max-width: 576px) {
+  :root {
+    --biggest-font-size: 2.5rem;
+    --h1-font-size: 2rem;
+    --h2-font-size: 1.75rem;
+    --h3-font-size: 1.25rem;
+  }
+
+  .container {
+    padding: 0 var(--space-3);
+  }
+
+  .section {
+    padding: var(--space-6) 0;
+  }
+
+  /* Header & Nav */
+  .header {
+    height: var(--header-height);
+  }
+
+  .nav__logo {
+    font-size: 1rem;
+  }
+
+  .nav__menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    height: 100%;
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-left: 1px solid var(--glass-border);
+    transition: right 0.4s ease;
+    z-index: var(--z-fixed);
+    padding: var(--space-7) var(--space-4) var(--space-4);
+  }
+
+  .nav__menu.show-menu {
+    right: 0;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    row-gap: var(--space-4);
+  }
+
+  .nav__close,
+  .nav__toggle {
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-color);
+  }
+
+  .nav__close {
+    position: absolute;
+    top: var(--space-4);
+    right: var(--space-4);
+    width: 30px;
+    height: 30px;
+  }
+
+  .nav__close .line {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: var(--text-color);
+    top: 50%;
+    left: 0;
+  }
+
+  .nav__close .line1 {
+    transform: rotate(45deg);
+  }
+
+  .nav__close .line2 {
+    transform: rotate(-45deg);
+  }
+
+  .nav__toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+  }
+
+  .nav__toggle .line {
+    width: 100%;
+    height: 2px;
+    background-color: var(--text-color);
+    transition: transform 0.3s ease;
+  }
+
+  /* Hero */
+  .hero__title {
+    font-size: var(--biggest-font-size);
+  }
+
+  .hero__subtitle {
+    font-size: var(--h3-font-size);
+  }
+
+  .hero__buttons {
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  /* About */
+  .about__container {
+    grid-template-columns: 1fr;
+    gap: var(--space-5);
+  }
+
+  .about__image {
+    order: -1;
+  }
+
+  .about__stats {
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+
+  /* Services */
+  .services__container {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+
+  /* Team */
+  .team__container {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+
+  /* Projects */
+  .projects__filter {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: var(--space-3);
+    gap: var(--space-2);
+  }
+
+  .filter-btn {
+    flex-shrink: 0;
+    padding: 0.5rem 1rem;
+    font-size: var(--smaller-font-size);
+  }
+
+  .projects__container {
+    grid-template-columns: 1fr;
+  }
+
+  /* Contact */
+  .contact__container {
+    grid-template-columns: 1fr;
+    gap: var(--space-5);
+  }
+
+  /* Footer */
+  .footer__container {
+    grid-template-columns: 1fr;
+    gap: var(--space-5);
+  }
+}
+
+/* For Tablets - 577px-768px */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  :root {
+    --biggest-font-size: 3rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.75rem;
+    --h3-font-size: 1.5rem;
+  }
+
+  /* Header & Nav */
+  .nav__menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 60%;
+    height: 100%;
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-left: 1px solid var(--glass-border);
+    transition: right 0.4s ease;
+    z-index: var(--z-fixed);
+    padding: var(--space-7) var(--space-4) var(--space-4);
+  }
+
+  .nav__menu.show-menu {
+    right: 0;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    row-gap: var(--space-4);
+  }
+
+  .nav__close,
+  .nav__toggle {
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-color);
+  }
+
+  .nav__close {
+    position: absolute;
+    top: var(--space-4);
+    right: var(--space-4);
+    width: 30px;
+    height: 30px;
+  }
+
+  .nav__close .line {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: var(--text-color);
+    top: 50%;
+    left: 0;
+  }
+
+  .nav__close .line1 {
+    transform: rotate(45deg);
+  }
+
+  .nav__close .line2 {
+    transform: rotate(-45deg);
+  }
+
+  .nav__toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+  }
+
+  .nav__toggle .line {
+    width: 100%;
+    height: 2px;
+    background-color: var(--text-color);
+    transition: transform 0.3s ease;
+  }
+
+  /* About */
+  .about__container {
+    grid-template-columns: 1fr;
+    gap: var(--space-5);
+  }
+
+  .about__image {
+    order: -1;
+  }
+
+  /* Services */
+  .services__container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
+  }
+
+  /* Team */
+  .team__container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
+  }
+
+  /* Projects */
+  .projects__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Contact */
+  .contact__container {
+    grid-template-columns: 1fr;
+    gap: var(--space-5);
+  }
+
+  /* Footer */
+  .footer__container {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-4);
+  }
+}
+
+/* For Medium Devices - 769px-992px */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  :root {
+    --biggest-font-size: 3.25rem;
+  }
+
+  /* About */
+  .about__container {
+    gap: var(--space-4);
+  }
+
+  /* Services */
+  .services__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Team */
+  .team__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Contact */
+  .contact__container {
+    gap: var(--space-4);
+  }
+}
+
+/* For Large Devices - 993px-1200px */
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+/* For Extra Large Devices - Above 1200px */
+@media screen and (min-width: 1201px) {
+  .container {
+    max-width: 1200px;
+  }
+  
+  /* Enhanced animations for larger screens */
+  .hero__title {
+    font-size: 4rem;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .project-item:hover .project-item__image {
+    transform: scale(1.1);
+  }
+}
+
+/* Landscape Mode Fixes */
+@media screen and (max-height: 450px) and (orientation: landscape) {
+  .hero {
+    height: auto;
+    min-height: 100vh;
+    padding: var(--space-8) 0;
+  }
+  
+  .hero__scroll {
+    display: none;
+  }
+  
+  .nav__menu {
+    padding-top: var(--space-4);
+  }
+  
+  .nav__list {
+    row-gap: var(--space-2);
+  }
+}
+
+/* Print Styles */
+@media print {
+  .header,
+  .hero__scroll,
+  .footer,
+  .contact__form-container,
+  .btn,
+  .nav,
+  .loader {
+    display: none !important;
+  }
+  
+  body {
+    background: white;
+    color: black;
+  }
+  
+  .container {
+    max-width: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .section {
+    padding: 1rem 0;
+    page-break-inside: avoid;
+  }
+  
+  a {
+    color: black;
+    text-decoration: underline;
+  }
+  
+  .section__line,
+  .image-placeholder::after,
+  .frame-glow,
+  .particles-container,
+  .hero__overlay {
+    display: none;
+  }
+  
+  .image-placeholder {
+    border: 1px solid #ccc;
+  }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+  :root {
+    --accent-color: #ff0033;
+    --text-color: #ffffff;
+    --body-color: #000000;
+    --primary-color: #000033;
+    --secondary-color: #000066;
+    --text-color-light: #cccccc;
+  }
+  
+  .glass,
+  .service-card__front,
+  .contact__form-container {
+    background: var(--primary-color);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border: 2px solid var(--text-color);
+  }
+  
+  .btn {
+    border: 2px solid var(--text-color);
+  }
+}
+
+/* Reduced Motion Preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  
+  .loader {
+    display: none;
+  }
+  
+  .reveal,
+  .reveal-left,
+  .reveal-right,
+  .reveal-up,
+  .reveal-down,
+  .reveal-scale,
+  .reveal-rotate,
+  .stagger-item {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+  }
+  
+  .particle {
+    display: none;
+  }
+  
+  .scroll-icon {
+    opacity: 1;
+  }
+  
+  .scroll-icon__dot {
+    animation: none;
+  }
+}

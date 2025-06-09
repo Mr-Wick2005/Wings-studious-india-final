@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wings Studios India | Film Production House</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/animations.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Playfair+Display:wght@400;700&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    (function(){
+      // TODO: Replace 'YOUR_EMAILJS_USER_ID' with your actual EmailJS user ID
+      // You can get this from your EmailJS dashboard after signing up and creating a service
+      emailjs.init("Q74-cI3EzuEo5rzlK");
+    })();
+  </script>
+</head>
+
+<body>
+  <div class="loader">
+    <div class="loader-content">
+      <div class="loader-text">Wings Studios</div>
+      <div class="loader-bar"></div>
+    </div>
+  </div>
+
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo">
+        <img src="/src/logo new pngg.png" alt="Wings Studios Logo" class="nav__logo-image" />
+        <span>WINGS</span>
+        <span class="accent">STUDIOS</span>
+      </a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+          <li class="nav__item"><a href="#team" class="nav__link">Team</a></li>
+          <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+        <div class="nav__close" id="nav-close">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+        </div>
+      </div>
+
+      <div class="nav__toggle" id="nav-toggle">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <video autoplay muted loop playsinline class="hero__video-background">
+        <source src="/src/background_video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="hero__container container">
+        <div class="hero__content">
+          <h1 class="hero__title split-text">
+            Bringing Stories to Life
+          </h1>
+          <p class="hero__subtitle">Premium Film Production House in India</p>
+          <div class="hero__buttons">
+            <a href="#projects" class="btn btn-primary">Our Work</a>
+            <a href="#contact" class="btn btn-outline">Get in Touch</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero__scroll">
+        <div class="scroll-icon">
+          <div class="scroll-icon__dot"></div>
+        </div>
+        <span>Scroll Down</span>
+      </div>
+      <!-- <img src="/src/logo new pngg.png" alt="Wings Studios Logo" class="hero__logo-image" /> -->
+
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section__title">About Us</h2>
+          <div class="section__line"></div>
+        </div>
+        <div class="about__container">
+          <div class="about__content">
+            <h3 class="about__subtitle reveal-text">Crafting Visual Excellence Since 2015</h3>
+            <p class="about__text">
+              Wings Studios India is a premier film production house dedicated to creating impactful visual stories.
+              With our state-of-the-art technology and passionate team of creatives, we transform ideas into cinematic
+              reality.
+            </p>
+            <p class="about__text">
+              Our commitment to excellence has established us as one of India's most innovative production studios,
+              collaborating with brands, agencies, and independent filmmakers to bring their visions to life.
+            </p>
+            <div class="about__stats">
+              <div class="stat">
+                <span class="stat__number" data-count="120">0</span>
+                <span class="stat__label">Projects Completed</span>
+              </div>
+              <div class="stat">
+                <span class="stat__number" data-count="15">0</span>
+                <span class="stat__label">Awards Won</span>
+              </div>
+              <div class="stat">
+                <span class="stat__number" data-count="30">0</span>
+                <span class="stat__label">Team Members</span>
+              </div>
+            </div>
+          </div>
+          <div class="about__image">
+            <div class="image-frame">
+              <img src="/src/imglogo.png" alt="">
+              <div class="image-placeholder"></div>
+              <div class="frame-glow"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services section" id="services">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section__title">Our Services</h2>
+          <div class="section__line"></div>
+        </div>
+        <div class="services__container">
+          <div class="service-card" data-service="production">
+            <div class="service-card__inner">
+              <div class="service-card__front">
+                <div class="service-card__icon">
+                  <div class="icon-placeholder"> <img src="/src/Filmproduction.png" alt="Filmproduction"></div>
+                </div>
+                <h3 class="service-card__title">Film Production</h3>
+              </div>
+              <div class="service-card__back">
+                <p>Full-service film production from concept to final delivery, including pre-production planning,
+                  shooting, and post-production.</p>
+                <a href="#contact" class="service-card__link">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-card" data-service="vfx">
+            <div class="service-card__inner">
+              <div class="service-card__front">
+                <div class="service-card__icon">
+                  <div class="icon-placeholder"> <img src="/src/VFX.png" alt="VFX"></div>
+                </div>
+                <h3 class="service-card__title">VFX & Animation</h3>
+              </div>
+              <div class="service-card__back">
+                <p>Cutting-edge visual effects and animation services to enhance storytelling and create immersive
+                  visual experiences.</p>
+                <a href="#contact" class="service-card__link">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-card" data-service="editing">
+            <div class="service-card__inner">
+              <div class="service-card__front">
+                <div class="service-card__icon">
+                  <div class="icon-placeholder"> <img src="/src/editing.png" alt="Editing"></div>
+                </div>
+                <h3 class="service-card__title">Editing & Post</h3>
+              </div>
+              <div class="service-card__back">
+                <p>Professional editing services including color grading, sound design, and final output in various
+                  formats and resolutions.</p>
+                <a href="#contact" class="service-card__link">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-card" data-service="studio">
+            <div class="service-card__inner">
+              <div class="service-card__front">
+                <div class="service-card__icon">
+                  <div class="icon-placeholder"> <img src="/src/space.png" alt="Space"></div>
+                </div>
+                <h3 class="service-card__title">Studio Space</h3>
+              </div>
+              <div class="service-card__back">
+                <p>State-of-the-art studio facilities with lighting equipment, green screens, and sound-treated spaces
+                  for productions.</p>
+                <a href="#contact" class="service-card__link">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team section" id="team">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section__title">Our Team</h2>
+          <div class="section__line"></div>
+        </div>
+        <div class="team__container">
+          <div class="team-member">
+            <div class="team-member__image">
+              <div class="image-placeholder"><img src="/src/11.jpg" alt=""></div>
+            </div>
+            <div class="team-member__info">
+              <h3 class="team-member__name">Rajiv Sharma</h3>
+              <p class="team-member__role">Creative Director</p>
+              <div class="team-member__socials">
+                <a href="#" class="social-link"><span class="sr-only">Instagram</span><img src="/src/insta.png" alt="" width="20px" height="50px"></a>
+                <a href="#" class="social-link"><span class="sr-only">LinkedIn</span><img src="/src/linkdin.png" alt="" width="20px" height="50px"></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="team-member">
+            <div class="team-member__image">
+              <div class="image-placeholder"><img src="/src/33.jpg" alt=""></div>
+            </div>
+            <div class="team-member__info">
+              <h3 class="team-member__name">Priya Patel</h3>
+              <p class="team-member__role">Head of Production</p>
+              <div class="team-member__socials">
+                <a href="#" class="social-link"><span class="sr-only">Instagram</span><img src="/src/insta.png" alt="" width="20px" height="50px"></a>
+                <a href="#" class="social-link"><span class="sr-only">LinkedIn</span><img src="/src/linkdin.png" alt="" width="20px" height="50px"></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="team-member">
+            <div class="team-member__image">
+              <div class="image-placeholder"><img src="/src/22.jpg" alt=""></div>
+            </div>
+            <div class="team-member__info">
+              <h3 class="team-member__name">Vikram Singh</h3>
+              <p class="team-member__role">Director of Photography</p>
+              <div class="team-member__socials">
+                <a href="#" class="social-link"><span class="sr-only">Instagram</span><img src="/src/insta.png" alt="" width="20px" height="50px"></a>
+                <a href="#" class="social-link"><span class="sr-only">LinkedIn</span><img src="/src/linkdin.png" alt="" width="20px" height="50px"></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="team-member">
+            <div class="team-member__image">
+              <div class="image-placeholder"><img src="/src/11.jpg" alt=""></div>
+            </div>
+            <div class="team-member__info">
+              <h3 class="team-member__name">Ananya Roy</h3>
+              <p class="team-member__role">VFX Supervisor</p>
+              <div class="team-member__socials">
+                <a href="#" class="social-link"><span class="sr-only">Instagram</span><img src="/src/insta.png" alt="" width="20px" height="50px"></a>
+                <a href="#" class="social-link"><span class="sr-only">LinkedIn</span><img src="/src/linkdin.png" alt="" width="20px" height="50px"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section__title">Our Projects</h2>
+          <div class="section__line"></div>
+        </div>
+        <div class="projects__filter">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="films">Films</button>
+          <button class="filter-btn" data-filter="commercials">Commercials</button>
+          <button class="filter-btn" data-filter="music">Music Videos</button>
+        </div>
+        <div class="projects__container">
+          <div class="project-item" data-category="films">
+            <div class="project-item__image">
+              <div class="image-placeholder"><img src="/src/1.png" alt=""></div>
+            </div>
+            <div class="project-item__overlay">
+              <h3 class="project-item__title">Echoes of Tomorrow</h3>
+              <p class="project-item__category">Feature Film</p>
+              <a href="#" class="project-item__link">View Project</a>
+            </div>
+          </div>
+
+          <div class="project-item" data-category="commercials">
+            <div class="project-item__image">
+              <div class="image-placeholder"><img src="/src/2.png" alt=""></div>
+            </div>
+            <div class="project-item__overlay">
+              <h3 class="project-item__title">Azure Skies Campaign</h3>
+              <p class="project-item__category">Commercial</p>
+              <a href="#" class="project-item__link">View Project</a>
+            </div>
+          </div>
+
+          <div class="project-item" data-category="music">
+            <div class="project-item__image">
+              <div class="image-placeholder"><img src="/src/3.png" alt=""></div>
+            </div>
+            <div class="project-item__overlay">
+              <h3 class="project-item__title">Midnight Dreams</h3>
+              <p class="project-item__category">Music Video</p>
+              <a href="#" class="project-item__link">View Project</a>
+            </div>
+          </div>
+
+          <div class="project-item" data-category="films">
+            <div class="project-item__image">
+              <div class="image-placeholder"><img src="/src/4.png" alt=""></div>
+            </div>
+            <div class="project-item__overlay">
+              <h3 class="project-item__title">The Last Journey</h3>
+              <p class="project-item__category">Short Film</p>
+              <a href="#" class="project-item__link">View Project</a>
+            </div>
+          </div>
+
+          <div class="project-item" data-category="commercials">
+            <div class="project-item__image">
+              <div class="image-placeholder"><img src="/src/5.png" alt="w"></div>
+            </div>
+            <div class="project-item__overlay">
+              <h3 class="project-item__title">Urban Pulse</h3>
+              <p class="project-item__category">Commercial</p>
+              <a href="#" class="project-item__link">View Project</a>
+            </div>
+          </div>
+
+          <div class="project-item" data-category="music">
+            <div class="project-item__image">
+              <div class="image-placeholder"><img src="/src/6.png" alt=""></div>
+            </div>
+            <div class="project-item__overlay">
+              <h3 class="project-item__title">Electric Soul</h3>
+              <p class="project-item__category">Music Video</p>
+              <a href="#" class="project-item__link">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section__title">Contact Us</h2>
+          <div class="section__line"></div>
+        </div>
+        <div class="contact__container">
+          <div class="contact__info">
+            <h3 class="contact__subtitle">Get in Touch</h3>
+            <p class="contact__text">
+              Have a project in mind? We'd love to hear from you. Reach out to discuss how Wings Studios can bring your
+              vision to life.
+            </p>
+            <div class="contact__details">
+              <div class="contact__item">
+                <div class="contact__icon">
+                  <div class="icon-placeholders"> <img src="/src/mail.png" alt="mail"></div>
+                </div>
+                <div>
+                  <h4>Email</h4>
+                  <p>info.wingsstudios@gmail.com</p>
+                </div>
+              </div>
+
+              <div class="contact__item">
+                <div class="contact__icon">
+                  <div class="icon-placeholders"><img src="/src/phone.png" alt="Phone"></div>
+                </div>
+                <div>
+                  <h4>Phone</h4>
+                  <p>+91 9967829399</p>
+                </div>
+              </div>
+
+              <div class="contact__item">
+                <div class="contact__icon">
+                  <div class="icon-placeholders"> <img src="/src/adress.png" alt="adress"></div>
+                </div>
+                <div>
+                  <h4>Address</h4>
+                  <p>Wings studios india, Goregaon west<br>Mahatma Gandhi Rd, beside Body Artist Gym, opposite Rosary Church, Unnat Nagar No. 4, Motilal Nagar III, Goregaon, Mumbai, Maharashtra 400104</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact__form-container">
+          <div class="map-container" style="width:100%; height:400px;">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.1234567890123!2d72.84000000000001!3d19.170500000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b7a123456789%3A0xabcdef1234567890!2sMahatma%20Gandhi%20Rd%2C%20beside%20Body%20Artist%20Gym%2C%20opposite%20Rosary%20Church%2C%20Unnat%20Nagar%20No.%204%2C%20Motilal%20Nagar%20III%2C%20Goregaon%2C%20Mumbai%2C%20Maharashtra%20400104!5e0!3m2!1sen!2sin!4v1690000000000!5m2!1sen!2sin"
+              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__container">
+        <div class="footer__brand">
+          <a href="#" class="footer__logo">
+            <span>WINGS</span>
+            <span class="accent">STUDIOS</span>
+          </a>
+          <p class="footer__text">
+            Transforming visions into cinematic reality with cutting-edge technology and creative excellence.
+          </p>
+        </div>
+
+        <div class="footer__links">
+          <h3 class="footer__title">Quick Links</h3>
+          <ul class="footer__list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__social">
+          <h3 class="footer__title">Follow Us</h3>
+          <div class="social-links">
+            <a href="https://www.instagram.com/wings_studios_india/" class="social-link" aria-label="Instagram">
+              <div class="social-icon instagram"><img src="/src/insta.png" alt="instagram"></div>
+            </a>
+            <a href="https://www.youtube.com/@wingsstudios" class="social-link" aria-label="YouTube">
+              <div class="social-icon youtube"><img src="/src/youtube.png" alt="youtube"></div>
+            </a>
+            <a href="#" class="social-link" aria-label="Facebook">
+              <div class="social-icon facebook"><img src="/src/facebook.png" alt="facebook"></div>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter">
+              <div class="social-icon twitter"><img src="/src/X.png" alt="X"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="footer__copyright">
+          &copy; 2025 Wings Studios India. All Rights Reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/animations.js"></script>
+  <script src="./js/navigation.js"></script>
+  <script src="./js/particles.js"></script>
+</body>
+
+</html>
