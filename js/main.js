@@ -15,21 +15,30 @@ document.addEventListener('DOMContentLoaded', function() {
 // Page loader
 function initializeLoader() {
   const loader = document.querySelector('.loader');
-  
+
+  let loaderHidden = false;
+
+  function hideLoader() {
+    if (loaderHidden) return;
+    loaderHidden = true;
+    gsap.to(loader, {
+      opacity: 0,
+      duration: 0.8,
+      onComplete: () => {
+        loader.classList.add('hidden');
+        // Start intro animations after loader is hidden
+        // Disabled animateHeroSection to keep hero content static
+        // animateHeroSection();
+      }
+    });
+  }
+
   window.addEventListener('load', () => {
-    setTimeout(() => {
-      gsap.to(loader, {
-        opacity: 0,
-        duration: 0.8,
-        onComplete: () => {
-          loader.classList.add('hidden');
-          // Start intro animations after loader is hidden
-          // Disabled animateHeroSection to keep hero content static
-          // animateHeroSection();
-        }
-      });
-    }, 1500);
+    setTimeout(hideLoader, 1500);
   });
+
+  // Fallback: hide loader after 5 seconds max in case load event doesn't fire
+  setTimeout(hideLoader, 5000);
 }
 
 // Scroll functions
